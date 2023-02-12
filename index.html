@@ -1,1 +1,848 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css" />
+    <title>Easy Pay Direct</title>
+  </head>
+  <body>
+
+    <main>
+
+      <!-- Here section Start From Here ====================-->
+      <section class="hero-sec bg-grayWhite pb-40 text-white bg-hero-pattern bg-cover bg-no-repeat ">  
+        <div id="header">   
+          <header class="py-5 hidden lg:block for-desktop uppercase">
+            <div class="container">
+              <div class="flex justify-between items-center">
+                <div>
+                  <ul>
+                    <li class="inline-block"><a class="block pr-2.5 xl:pr-4 text-sm font-medium" href="#">HOME</a></li>
+                    <li class="inline-block"><a class="block px-2.5 xl:px-4 text-sm font-medium" href="#">WHO WE ARE</a></li>
+                    <li class="dropdown-wrap inline-block relative "><a class="block px-2.5 xl:px-4 text-sm font-medium" href="#">WHO WE SERVE <span>
+                      <svg width="12px" fill="#fff" class="inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                    </span></a>
+                    <ul class="dropdown-menu absolute top-full left-0 w-max pl-4 opacity-0 invisible duration-300 ease-linear bg-white rounded-md mt-4 py-2.5 px-8">
+                      <li class=""><a class="text-sm font-medium text-black" href="#">Our service 1</a></li>
+                      <li  class="my-3"><a class="text-sm font-medium text-black" href="#">Our Service 2</a></li>
+                    </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div>
+                    <img class="w-56 ml-14 logo-img" src="assets/images/logo-img.png" alt="">
+                    <img class="w-12 ml-28 logo-scroll hidden" src="assets/images/logo-scroll.png" alt="">
+                    </div>
+                </div>
+                <div>
+                  <ul>
+                    <li class="dropdown-wrap inline-block relative "><a class="block px-2.5 xl:px-4 text-sm font-medium" href="#">PARTNERS<span>
+                      <svg width="12px" fill="#fff" class="inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                    </span></a>
+                      <ul class="dropdown-menu absolute top-full left-0 w-max pl-4 opacity-0 invisible duration-300 ease-linear bg-white rounded-md mt-4 py-2.5 px-8">
+                        <li class=""><a class="text-sm font-medium text-black" href="#">Our Partner 1</a></li>
+                        <li  class="my-3"><a class="text-sm font-medium text-black" href="#">Our Partner 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="inline-block"><a class="block px-2.5 xl:px-4 text-sm font-medium" href="#">BLOG</a></li>
+                    <li class="inline-block"><a class="block px-2.5 xl:px-4 text-sm font-medium" href="#">FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="flex items-center">
+                  <a href="#" class="common-btn px-3 inline-block bg-transparent border-white hover:bg-secondary hover:border-transparent ">CLIENT LOGIN</a>
+                 
+                </div>
+              </div>
+            </div>
+          </header>
+      
+          <header class="for-mobile block lg:hidden py-5">
+            <div class="container">
+              <div class="flex justify-between">
+                <div class="header-logo">
+                  <img class="w-56 hidden xs:block" src="assets/images/logo-img.png" alt="">
+                  <img class="w-20 block xs:hidden" src="assets/images/logo-scroll.png" alt="">
+                </div>
+                <div class="flex items-center mobile-menu-toggle">
+                  <a href="#" class="common-btn inline-block px-3 bg-transparent border-white hover:bg-secondary hover:border-transparent mr-4">CLIENT LOGIN</a>
+                  <a href="#" class="inline-block" onclick="openNav()">
+                    <span>
+                      <svg class="rotate-180" fill="white" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="mobileMenu" class="mobileMenu text-white uppercase">
+              <div class="p-5">
+                <div class="flex justify-end">
+                  <a href="javascript:void(0)" class="closebtn text-4xl" onclick="closeNav()">&times;</a>
+                </div>
+                <ul class="ml-6">
+                  <li class=""><a class="block text-base font-medium" href="#">HOME</a></li>
+                  <li class="my-5"><a class="blockquote text-base font-medium" href="#">WHO WE ARE</a></li>
+                  <li class="my-5"><a class="text-base font-medium" href="#">WHO WE SERVE</a>
+                    <ul class="ml-7 my-2">
+                      <li class="my-3"><a class="text-sm font-medium" href="#">Service 1</a></li>
+                      <li  class="my-3"><a class="text-sm font-medium" href="#">Service 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="my-5"><a class="text-base font-medium" href="#">PARTNERS</a>
+                    <ul class="ml-7 my-2">
+                      <li  class="my-3"><a class="text-sm font-medium" href="#">Our Partner 1</a></li>
+                      <li  class="my-3"><a class="text-sm font-medium" href="#">Our Partner 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="my-5"><a class="block text-base font-medium" href="#">BLOG</a></li>
+                  <li class="my-5"><a class="block text-base font-medium" href="#">FAQ</a></li>
+                </ul>
+                </ul>
+              </div>
+            </div>
+          </header>
+       </div>
+    
+        <div class="container ">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-0 items-center py-16 lg:py-28   ">
+            <div class="lg:-mt-36">
+              <div class="text-center md:text-left">
+                <h1 class="text-2xl  font-medium  uppercase">EASY PAY DIRECT</h1>
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl xl:leading-[55px] lg:leading-[45px] leading-[40px] font-extrabold  uppercase my-3  ">ACCEP <br> ANYWHERE ONLINE IN <br>STORE OR MOBILE</h2>
+                <P class="text-base  leading-6 
+              mb-8">Optimize the way you accept payments with a single point of contact, multiple back end banks, and cutting-edge technology.</P>
+    
+                <div>
+                  <a href="#" class="common-btn  inline-block">Get Setup TODAY</a>
+                  <a href="" class="common-btn bg-transparent border-white hover:bg-secondary hover:border-transparent inline-block">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div><img class="mx-auto md:w-full" src="assets/images/banner-img.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+      <!-- Here section End From Here ======================-->
+
+
+      <!-- Fans section start from here ===================-->
+      <section class="relative py-5 bg-grayWhite3 ">
+        <div class="absolute pl-10 py-3 -left-5 top-0 md:-top-4 h-full md:h-[calc(100%+32px)] bg-primary text-white w-40 -skew-x-12 rounded-tr-xl rounded-br-md flex items-center">
+          <h2 class="skew-x-12 text-2xl lg:text-3xl">RAVING FANS</h2>
+        </div>
+
+        <div class="container">
+          <div class="md:flex ml-24 items-center ">
+            <div class="flex items-center">
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/d-marketer.png" alt="">
+              </div>
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/grant-c.png" alt="">
+              </div>
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/infusion.png" alt="">
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/frank.png" alt="">
+              </div>
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/ryan.png" alt="">
+              </div>
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/Fb.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fans section End from here =====================-->
+
+
+      <!-- Service section Start From Here ================-->
+      <section class="service-sec py-20 bg-grayWhite">
+        <div class="container">
+          <div class="text-center">
+            <h2 class=" text-2xl lg:text-3xl text-primary font-medium  uppercase">YOUR FAST, EASY, SAFE FULL PAYMENT SOLUTION</h2>
+            <P class="text-sm xl:text-base text-black leading-6 
+            w-4/5 md:w-3/5 m-auto mt-4 mb-8">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</P>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+
+            <div>
+              <div class="service-box  flex flex-col justify-between text-center bg-white shadow-lg py-5 px-2.5 min-h-full border-2 border-transparent duration-300 ease-linear">
+                <img class="mx-auto" src="assets/images/online-gateway.png" alt="">
+                <p class="text-sm xl:text-base font-medium my-4 leading-5">Online <br>Gateway</p>
+                <div>
+                  <a href="" class="service-box-icon inline-block border-black border-[1.5px] border-solid px-2 rounded-full">
+                    <span>
+                      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>   
+            
+            
+            <div>
+              <div class="service-box flex flex-col justify-between text-center bg-white shadow-lg py-5 
+              px-2.5 min-h-full border-2 border-transparent duration-300 ease-linear">
+                <img class="mx-auto" src="assets/images/merchant-account.png" alt="">
+                <p class="text-sm xl:text-base font-medium my-4 leading-5">High Risk Marchent <br>Accounts</p>
+                <div>
+                  <a href="" class="service-box-icon inline-block border-black border-[1.5px] border-solid px-2 rounded-full">
+                    <span>
+                      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="service-box flex flex-col justify-between text-center bg-white shadow-lg
+              py-5 px-2.5  min-h-full border-2 border-transparent duration-300 ease-linear">
+                <img class="mx-auto" src="assets/images/partner-program.png" alt="">
+                <p class="text-sm xl:text-base font-medium my-4 leading-5">Partner <br>Program</p>
+                <div>
+                  <a href="" class="service-box-icon inline-block border-black border-[1.5px] border-solid px-2 rounded-full">
+                    <span>
+                      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>     
+            <div>
+              <div class="service-box flex flex-col justify-between text-center bg-white shadow-lg
+              py-5 px-2.5  min-h-full border-2 border-transparent duration-300 ease-linear">
+                <img class="mx-auto" src="assets/images/chargeback.png" alt="">
+                <p class="text-sm xl:text-base font-medium my-4 leading-5">Chargeback <br>Management</p>
+                <div>
+                  <a href="" class="service-box-icon inline-block border-black border-[1.5px] border-solid px-2 rounded-full">
+                    <span>
+                      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>     
+            <div>
+              <div class="service-box  flex flex-col justify-between text-center bg-white shadow-lg 
+              py-5 px-2.5 min-h-full border-2 border-transparent duration-300 ease-linear">
+                <img class="mx-auto" src="assets/images/cbd-hemp.png" alt="">
+                <p class="text-sm xl:text-base font-medium my-4 leading-5">CBD and <br>Hemp</p>
+                <div>
+                  <a href="" class="service-box-icon inline-block border-black border-[1.5px] border-solid px-2 rounded-full">
+                    <span>
+                      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>    
+
+            <div>
+              <div class=" service-box flex flex-col justify-between text-center bg-white shadow-lg py-5 px-2.5 min-h-full border-2 border-transparent duration-300 ease-linear">
+                <img class="mx-auto" src="assets/images/integrated-api.png" alt="">
+                <p class="text-sm xl:text-base font-medium my-4 leading-5">Integrated Payments <br>API</p>
+                <div>
+                  <a href="" class="service-box-icon inline-block border-black border-[1.5px] border-solid px-2 rounded-full">
+                    <span>
+                      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            
+
+
+          </div>
+        </div>
+      </section>
+      <!-- Service section End From Here =================-->
+
+
+
+      <!-- Market Risk Section Start From Here ===========-->
+      <section class="risk-sec bg-grayWhite py-20">
+        <div class="container">
+          <div class="text-center">
+            <h2 class=" text-2xl lg:text-3xl text-primary font-medium  uppercase mb-8">Market Risk</h2>
+          </div>
+
+          <div class="flex justify-between w-full sm:w-full lg:w-3/4 mx-auto border-b border-solid border-gray mb-5">
+            <div>
+              <button onclick="marketRiskTab(event, 'mediumRisk')" class="marketRiskTabBtn market-risk-active pb-2 inline-block px-0 sm:px-4 relative text-sm sm:text-base font-medium tracking-normal " ><img class="hidden xs:inline-block" src="assets/images/medium-risk.png" alt=""> <span>Medium Risk</span><span class="h-4 w-4 market-risk-arrow hidden border-r-2 border-solid border-secondary border-b-2 bg-grayWhite absolute -bottom-[9px] left-[45%] rotate-45"></span></button>
+            </div>
+            <div>
+              <button onclick="marketRiskTab(event, 'lowRisk')" class="marketRiskTabBtn pb-2 inline-block px-0 sm:px-8 relative text-sm sm:text-base font-medium tracking-normal"><img class="hidden xs:inline-block" src="assets/images/low-risk.png" alt=""> <span>Low Risk</span><span class="h-4 w-4 market-risk-arrow hidden border-r-2 border-solid border-secondary border-b-2 bg-grayWhite absolute -bottom-[9px] left-[45%] rotate-45"></span></button>
+            </div>
+            <div>
+              <button onclick="marketRiskTab(event, 'highRisk')" class="marketRiskTabBtn pb-2 inline-block px-0 sm:px-8 relative text-sm sm:text-base font-medium tracking-normal" ><img class="hidden xs:inline-block" src="assets/images/high-risk.png" alt=""> <span>High Risk</span><span class="h-4 w-4 market-risk-arrow hidden border-r-2 border-solid border-secondary border-b-2 bg-grayWhite absolute -bottom-[9px] left-[45%] rotate-45"></span></button>
+            </div>
+          </div>
+
+          <div id="mediumRisk" class="marketRiskTabContent">
+            
+            <div class="grid md:grid-cols-2 items-center gap-5 md:gap-5">
+              <div>
+                <div>
+                  <h3 class="text-lg text-secondary font-medium tracking-normal">LOW RISK</h3>
+                  <P class="mt-3 text-grayOne text-sm  leading-6">Are you doing face to face transactions? We can get most low risk businesses up and running in 24 hours - AND we reserve the lowest rates in the industry for them. Restaurants, Bars and most brick and mortar stores quality.</P>
+                  <p class="mt-3 text-grayOne text-sm  leading-6">Use your equipment, Allow us to set you up on the latest and greatest POS System - or integrate to our payment gateway or mobile app. Anyway you want to do it, we'll make things easier.</p>
+                  <ul class="list-unstyled mt-5">
+                    <li class="flex items-center text-sm font-medium "><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>Patent Pending "Transaction Routing" Technology</li>
+                    <li class="flex items-center text-sm font-medium  my-2.5"><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>More than 250 Shopping Carts Integrated</li>
+                    <li class="flex items-center text-sm font-medium "><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>Hosted checkout pages & email invoices</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div><img class="mx-auto" src="assets/images/market-low-risk.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="lowRisk" class="marketRiskTabContent hidden">
+            
+            <div class="grid md:grid-cols-2 items-center gap-5 md:gap-5">
+              <div>
+                <div><img class="mx-auto" src="assets/images/market-low-risk.png" alt=""></div>
+              </div>
+              <div>
+                <div>
+                  <h3 class="text-lg text-secondary font-medium tracking-normal">LOW RISK</h3>
+                  <P class="mt-3 text-grayOne text-sm  leading-6">Are you doing face to face transactions? We can get most low risk businesses up and running in 24 hours - AND we reserve the lowest rates in the industry for them. Restaurants, Bars and most brick and mortar stores quality.</P>
+                  <p class="mt-3 text-grayOne text-sm  leading-6">Use your equipment, Allow us to set you up on the latest and greatest POS System - or integrate to our payment gateway or mobile app. Anyway you want to do it, we'll make things easier.</p>
+                  <ul class="list-unstyled mt-5">
+                    <li class="flex items-center text-sm font-medium "><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>Patent Pending "Transaction Routing" Technology</li>
+                    <li class="flex items-center text-sm font-medium  my-2.5"><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>More than 250 Shopping Carts Integrated</li>
+                    <li class="flex items-center text-sm font-medium "><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>Hosted checkout pages & email invoices</li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div id="highRisk" class="marketRiskTabContent hidden">
+            
+            <div class="grid md:grid-cols-2 items-center gap-5 md:gap-5">
+              <div>
+                <div>
+                  <h3 class="text-lg text-secondary font-medium tracking-normal">LOW RISK</h3>
+                  <P class="mt-3 text-grayOne text-sm  leading-6">Are you doing face to face transactions? We can get most low risk businesses up and running in 24 hours - AND we reserve the lowest rates in the industry for them. Restaurants, Bars and most brick and mortar stores quality.</P>
+                  <p class="mt-3 text-grayOne text-sm  leading-6">Use your equipment, Allow us to set you up on the latest and greatest POS System - or integrate to our payment gateway or mobile app. Anyway you want to do it, we'll make things easier.</p>
+                  <ul class="list-unstyled mt-5">
+                    <li class="flex items-center text-sm font-medium "><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>Patent Pending "Transaction Routing" Technology</li>
+                    <li class="flex items-center text-sm font-medium  my-2.5"><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>More than 250 Shopping Carts Integrated</li>
+                    <li class="flex items-center text-sm font-medium "><span class="w-4 h-4 bg-secondary rounded-full inline-block mr-3">
+                      <svg width="12px" fill="#fff" class="block mx-auto mt-[2px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </span>Hosted checkout pages & email invoices</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div><img class="mx-auto" src="assets/images/market-low-risk.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Market Risk Section End From Here =============-->
+
+
+
+      <!-- Counter Section Start From Here ================-->
+      <section class="counter-sec bg-primary text-white pt-5 pb-8">
+        <div class="container">
+          <div><h2 class="text-center mt-5 text-2xl lg:text-3xl text-white font-medium mb-8 uppercase">Easy Pay Direct Stats</h2></div>
+          <div class="block sm:flex sm:w-11/12 lg:w-3/5 mx-auto justify-around text-center">
+
+            <div>
+              <h3 class="text-3xl font-medium"><span>30000</span><span>+</span></h3>
+              <p class="text-sm">BUSINESS</p>
+            </div>
+
+            <div class="my-10 sm:my-0">
+              <h3 class="text-3xl font-medium"><span>$</span><span>12</span><span>B+</span></h3>
+              <p class="text-sm">PRECESSED</p>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-medium"><span>20</span><span>+</span></h3>
+              <p class="text-sm">YEARS OF EXPERIENCE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Counter Section End From Here ==================-->
+    
+
+      <!-- Payment step section start from here ============-->
+      <section class="step-sec bg-grayWhite py-20">
+        <div class="container">
+          <div>
+            <h2 class=" text-center mt-5 text-2xl lg:text-3xl text-primary font-medium mb-8 uppercase">THE FASTEST SAFE PAYMENTS IN 3 EASY STEPS</h2>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+              <div class="relative text-center">
+                <h3 class="text-9xl font-bold text-[#C5DDCF]"">1</h3>
+                <img class="absolute w-[30%] xs:w-[26%] sm:w-[20%] md:w-[30%] top-0 right-16 xs:right-24 sm:right-44 md:right-16" src="assets/images/online-application.png" alt="">
+                <img class="absolute -right-16 top-10 hidden md:block" src="assets/images/payment1.png" alt="">                            
+              </div>
+
+              <div class="text-center mt-5">
+                <p><strong class="text-secondary text-xl font-bold ">Online</strong> <span 
+                  class="text-xl text-secondary font-normal relative 
+                  after:content-[''] after:absolute after:h-[2px] after:w-10 after:-bottom-2 after:left-2 after:bg-secondary">Application</span></p>
+                <p class="mt-6 text-grayOne text-sm  leading-6">Fill out our 7 minute online application and let our team do the heavy lifting. A New Client Specialist (NCS) is a text, chat or call away to make everything EASY. The more we know about your business, the more stable your account will be.</p>
+              </div>
+            </div>
+
+
+            <div>
+              <div class="relative text-center">
+                <h3 class="text-9xl font-bold text-[#C5DDCF]"">2</h3>
+                <img class="absolute w-[30%] xs:w-[26%] sm:w-[20%] md:w-[30%] top-0 right-16 xs:right-24 sm:right-44 md:right-16" src="assets/images/payment-optimization.png" alt="">
+                <img class="absolute -right-16 top-10 hidden lg:block" src="assets/images/payment1.png" alt=""> 
+              </div>
+              <div class="text-center mt-5">
+                <p><strong class="text-secondary text-xl font-bold ">Payment</strong> <span 
+                  class="text-xl text-secondary font-normal relative 
+                  after:content-[''] after:absolute after:h-[2px] after:w-10 after:-bottom-2 after:left-2 after:bg-secondary">Optimization Plan</span></p>
+                <p class="mt-6 text-grayOne text-sm leading-6">We classify your business as a Gold, Platinum, or Diamond merchant based on your unique processing needs. You'll be introduced to your Certified Payment Specialist (CPS), which will be your dedicated point of contact. They'll make sure you're setup with the Right merchant account(s) for your business.</p>
+              </div>
+            </div>
+
+
+            <div class="sm:block md:hidden lg:block ">
+              <div class="relative text-center">
+                <h3 class="text-9xl font-bold text-[#C5DDCF]">3</h3>
+                <img class="absolute w-[30%] xs:w-[26%]  sm:w-[20%] md:w-[30%] top-0 right-16 xs:right-24 sm:right-44 md:right-16" src="assets/images/accept-payments.png" alt="">
+              </div>
+              <div class="text-center mt-5">
+                <p><strong class="text-secondary text-xl font-bold ">Accept</strong> <span 
+                  class="text-xl text-secondary font-normal relative 
+                  after:content-[''] after:absolute after:h-[2px] after:w-10 after:-bottom-2 after:left-2 after:bg-secondary">Payments</span></p>
+                <p class="mt-6 text-grayOne text-sm leading-6">Start accepting payments the Easy Pay Direct way! Your Dedication CPS isw just a click or call away so that you never have to deal with phone trees or chatbots. The will monitor your accounts,j stay in contact with you permanently, and are available when your need them.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" hidden md:block lg:hidden w-1/2 mx-auto mt-10">
+            <div class="relative text-center">
+              <h3 class="text-9xl font-bold text-[#C5DDCF]">3</h3>
+              <img class="absolute w-[30%] top-0 right-16" src="assets/images/accept-payments.png" alt="">
+            </div>
+            <div class="text-center mt-5">
+              <p><strong class="text-secondary text-xl font-bold ">Accept</strong> <span 
+                class="text-xl text-secondary font-normal relative 
+                after:content-[''] after:absolute after:h-[2px] after:w-10 after:-bottom-2 after:left-2 after:bg-secondary">Payments</span></p>
+              <p class="mt-6 text-grayOne text-sm leading-6">Start accepting payments the Easy Pay Direct way! Your Dedication CPS isw just a click or call away so that you never have to deal with phone trees or chatbots. The will monitor your accounts,j stay in contact with you permanently, and are available when your need them.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- Payment step section End from here ==============-->
+
+
+      <!-- Tools Section Start From Here =================-->
+      <section class="tools-sec bg-secondary py-20 text-white">
+        <div class="container">
+          <div><h2 class="text-center text-2xl lg:text-3xl text-white font-medium mb-10">SEAMLESS INTEGRATIONS WITH TOOLS YOU KNOW</h2></div>
+          <div class="grid sm:grid-cols-2 gap-6 items-center">
+            <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+              <div class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'bigcommerce')" class="integrationToolTabBtn tools-tab-active h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full w-3/4 m-auto" src="assets/images/bigcommerce.png" alt="">
+                  </button>
+                </div>                
+              </div>
+
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'woocommerce')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/woocommerce.png" alt="">
+                  </button>
+                </div>              
+              </div>
+
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'volusion')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/volusion.png" alt="">
+                  </button>
+                </div>              
+              </div>
+              
+              
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'magento')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/magento.png" alt="">
+                  </button>
+                </div>                
+              </div>
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'shopify')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/shopify.png" alt="">
+                  </button>
+                </div>                
+              </div>
+
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'opencart')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/opencart.png" alt="">
+                  </button>
+                </div>   
+              </div>
+              
+              
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'prestashop')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/prestashop.png" alt="">
+                  </button>
+                </div>               
+              </div>
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'cart3d')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/3dcart.png" alt="">
+                  </button>
+                </div>             
+              </div>
+
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'ecwid')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/Ec-wid.png" alt="">
+                  </button>
+                </div>
+             
+              </div>
+
+              <div  class="h-24 flex justify-center items-center" >
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'wordpress')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/wp.png" alt="">
+                  </button>
+                </div>               
+              </div>
+
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'zencart')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full  w-3/5 m-auto" src="assets/images/zen-cart.png" alt="">
+                  </button>
+                </div>
+                
+              </div>
+
+              <div  class="h-24 flex justify-center items-center">
+                <div class="h-full w-full">
+                  <button onclick="integrationToolTab(event, 'nopcommerce')" class="integrationToolTabBtn h-full w-full border border-[#57bc7e] border-solid">
+                    <img class="max-h-full w-11/12  lg:w-3/4 m-auto" src="assets/images/nopCommerce.png" alt="">
+                  </button>
+                </div>              
+              </div>
+              
+            </div>
+            <div>
+
+              <div class="integrationToolTabContent" id="bigcommerce">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">BigCommerce Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="woocommerce">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">WooCommerce Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="volusion">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">volusion Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="magento">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">Magento Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="shopify">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">Shopify Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="opencart">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">OpenCart Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="prestashop">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">PrestaShop Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="cart3d">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">3dCart Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="ecwid">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">ECWID Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="wordpress">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">Wordpress Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="zencart">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">ZenCart Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+              
+              <div class="integrationToolTabContent hidden" id="nopcommerce">
+                <div class="text-center">
+                  <h3 class=" text-xl tracking-normal  text-white font-normal mb-3">NopCommerce Integration</h3>
+                  <p class=" text-xs   text-white font-normal leading-6">Shopify is to eCommerce store set up as PaymentCloud is to payment processiong- simple. With a Shopify and PaymentCloud integration, you wll have a versatile and robust website shopping cart. Let us connect you to our tools so you can leverage our merchant services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tools Section End From Here ===================-->
+
+
+      <!-- Brand Section Start From Here =================-->
+      <section class="brand-sec pt-16 pb-24 bg-primary">
+        <div class="container">
+          <div class="grid grid-cols-3  sm:grid-cols-6 items-center  gap-4 w-full lg:w-4/5 mx-auto">
+              <div>
+                <img class="w-1/2 mx-auto" src="assets/images/top-credit-card.png" alt="">
+              </div>
+              <div>
+                <img  class="w-1/2 mx-auto" src="assets/images/a-rated-service.png" alt="">
+              </div>
+              <div>
+                <img class="w-3/5 mx-auto" src="assets/images/inc-5000.png" alt="">
+              </div>            
+
+              <div>
+                <img class="w-full mx-auto" src="assets/images/daily-mail.png" alt="">
+              </div>
+              <div>
+                <img class="w-4/5 mx-auto" src="assets/images/forbes.png" alt="">
+              </div>
+              <div>
+                <img class="w-11/12 mx-auto" src="assets/images/merchant-maverick.png" alt="">
+              </div>           
+          </div>
+        </div>
+      </section>
+      <!-- Brand Section End From Here ===================-->
+
+
+      <!-- Payment form section Start From Here ===========-->
+      <section class="paymemnt-form-sec bg-grayWhite py-20 ">
+        <div class="container">
+
+          <div class=" sm:w-4/5 md:w-3/4 lg:w-3/5 mx-auto py-5 px-10 bg-white -mt-36 shadow-xl">
+
+            <h2 class="text-center mt-5 text-2xl lg:text-3xl  text-primary font-medium">I WANT TO ACCEPT PAYMENT NOW</h2>
+
+            <form action="#" method="" class="my-5">
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div>
+                  <input type="text" id="" name="" class="my-2  
+                  py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="First Name">
+                </div>
+                <div>
+                  <input type="text" id="" name="" class="my-2 py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="Last Name">
+                </div>
+              </div>
+              <div>
+                <input type="email" id="" name="" class="my-2  py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="Company Email">
+              </div>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div>
+                  <input type="text" id="" name="" class="my-2 py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="Phone Number">
+                </div>
+                <div>
+                  <input type="text" id="" name="" class="my-2 py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="Business Name">
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <input type="text" id="" name="" class="my-2 py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="Annual Processing Amount">
+                </div>
+                <div>
+                  <input type="url" id="" name="" class="my-2 py-[8px] px-3  outline outline-gray-300 outline-1 rounded-md w-full  placeholder:text-xs" placeholder="Website URL">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="mt-5 common-btn hover:border-secondary hover:text-secondary inline-block text-center">GET STARTED</button>
+              </div>
+            </form>
+
+          </div>
+      </section>
+      <!-- Payment form section End From Here ============-->
+
+
+      <!-- Footer section Start From Here ==================-->
+      <footer class="footer-sec bg-grayBlack text-white py-12">
+        <div class="container">
+          <div class="grid gap-y-8 md:grid-cols-2 md:gap-y-10 lg:grid-cols-4">
+
+            <div class="">
+              <div><img class=" m-auto md:-mt-3 " src="assets/images/logo-img.png" alt=""></div>
+            </div>
+
+            <div class="text-center">
+              <div>
+                <h2 class="text-lg font-normal tracking-normal mb-3">SOLUTIONS</h2>
+                <ul class="list-unstyled ">
+                  <li><a class="text-sm my-1 inline-block" href="#">Integrations</a></li>
+                  <li><a class="text-sm my-1 inline-block" href="#">Our customers</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-center">
+                <h2 class="text-lg font-normal tracking-normal mb-3">ABOUT</h2>
+                <ul class="list-unstyled">
+                  <li><a class="text-sm my-1 inline-block" href="#">Who we are</a></li>
+                  <li><a class="text-sm my-1 inline-block" href="#">Integrations</a></li>
+                  <li><a class="text-sm my-1 inline-block" href="#">Partners</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-center ">
+                <ul class="list-unstyled mb-2">
+                  <li class="inline-block">
+                    <a href="#" class="block border border-solid border-white rounded-md px-2.5 py-1.5">
+                      <span>
+                        <svg width="12px" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="inline-block mx-5">
+                    <a href="#" class="block border border-solid border-white rounded-md px-2 py-1.5">
+                      <span>
+                        <svg width="18px" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="inline-block">
+                    <a href="#" class="block border border-solid border-white rounded-md px-2.5 py-1.5">
+                      <span>
+                        <svg width="15px" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <p class="text-sm my-2 inline-block text-center">Copyright &copy; 2023 Easy Pay Direct</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <!-- Footer section End From Here ====================-->
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
+
