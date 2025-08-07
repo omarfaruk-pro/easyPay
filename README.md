@@ -27,7 +27,10 @@ This project is a responsive landing page for **EasyPay Direct**, a secure onlin
 
 ---
 
+---
+
 ## 📁 Folder Structure
+
 easyPay/
 │
 ├── index.html # Main HTML file
@@ -37,6 +40,11 @@ easyPay/
 ├── js/ # JavaScript files (if any)
 └── README.md # This file
 
+yaml
+Copy
+Edit
+
+---
 ## 📸 Screenshot
 
 ![EasyPay Direct Preview](https://omarfaruk-pro.github.io/easyPay/assets/images/preview.png)
