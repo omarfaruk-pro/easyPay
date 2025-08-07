@@ -40,10 +40,6 @@ easyPay/
 ├── js/ # JavaScript files (if any)
 └── README.md # This file
 
-yaml
-Copy
-Edit
-
 ---
 ## 📸 Screenshot
 
@@ -51,18 +47,6 @@ Edit
 
 ---
 
-## 📁 Folder Structure
-
-easyPay/
-├── index.html         # Main HTML file
-├── style.css          # Custom styles (optional with Tailwind)
-├── tailwind.config.js # Tailwind CSS config
-├── assets/            # Images and icons
-├── js/                # JavaScript files (if any)
-└── README.md          # This file
-
-
----
 
 ## 📦 Installation & Setup
 
