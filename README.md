@@ -36,7 +36,7 @@ This project is a responsive landing page for **EasyPay Direct**, a secure onlin
 ## 📁 Folder Structure
 
 easyPay/
-│
+
 ├── index.html         # Main HTML file
 ├── style.css          # Custom styles (optional with Tailwind)
 ├── tailwind.config.js # Tailwind CSS config
